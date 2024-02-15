@@ -1,0 +1,11 @@
+Designed to verify the fundamental functionality of a FIFO (First-In-First-Out) memory.
+The test steps cover initialization, data writing, verification of data writing order, data reading, verification of data reading order, and testing boundary conditions such as overflow and underflow scenarios.
+This comprehensive test case helps ensure that the FIFO memory correctly stores and retrieves data in a first-in, first-out manner, adhering to its specified behavior and capacity constraints.
+
+The FIFO consists two global signals - rst and clk.
+It has 2 control singals - wr and rd, each one specifiys the operation on the opreator.
+we need to make sure that wr and rd are mutually exclusive.
+and there is a data signal whichs specifiy the data we will write to the Memory.
+For the outputs:
+Theres is a dout signal which specifiy the data sent out in a case of a read opeartion.
+And there are two control flags - Full and Empty which determines is the memory is full/empty of data.
